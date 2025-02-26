@@ -1,5 +1,5 @@
 import { Bell, Camera, ChevronDown, Facebook, Globe, HelpCircle, Instagram, MessageCircleMore, Search, ShoppingCart, Twitter } from 'lucide-react'
-import ShopeeLogo from "../../../public/shopee-logo.png"
+import ShopeeLogo from "../../assets/img/shopee-logo.png"
 
 export function Header() {
     return (
