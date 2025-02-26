@@ -2,7 +2,7 @@ import { Bell, Home, ShoppingBag, User, Video } from "lucide-react";
 
 export function Footer (){
     return(
-        <div className="flex justify-around p-4 pb-6 bg-zinc-100">
+        <div className="sm:hidden flex fixed bottom-0 w-full justify-around p-2 pb-4 bg-zinc-100">
             <div className="flex flex-col items-center text-orange-600">
                 <Home />
                 <p className="text-xs">Inicio</p>

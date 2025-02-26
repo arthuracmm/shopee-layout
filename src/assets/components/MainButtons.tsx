@@ -2,8 +2,8 @@ import { CircleDollarSign, Grid2X2, ShoppingBag, ShoppingCart, Smartphone, TextS
 
 export function MainButtons(){
     return(
-        <div className="grid grid-cols-5 grid-rows-2 mt-4 gap-y-6">
-            <div className="flex flex-col text-center items-center">
+        <div className="grid grid-cols-5 md:grid-cols-9 my-4 gap-y-6 md:w-300">
+            <div className="sm:hidden flex flex-col text-center items-center">
                 <CircleDollarSign size={40} className="text-yellow-500 p-2 border-1 border-zinc-300 rounded-lg"/>
                 <p className="text-xs font-semibold">Moedas <span className="block"> e Prêmios</span></p>
             </div>
@@ -39,9 +39,9 @@ export function MainButtons(){
                 <ShoppingCart size={40} className="text-blue-400 p-2 border-1 border-zinc-300 rounded-lg"/>
                 <p className="text-xs font-semibold">Mercado</p>
             </div>
-            <div className="flex flex-col text-center items-center">
+            <div className=" flex flex-col text-center items-center">
                 <Grid2X2 size={40} className="text-green-700 p-2 border-1 border-zinc-300 rounded-lg"/>
-                <p className="text-xs font-semibold">Mercado</p>
+                <p className="text-xs font-semibold">Plus</p>
             </div>
         </div>
     )
