@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+Projeto de estudo recriando o layout da plataforma Shopee Marketplace utilizando **Vite**, **React**, **TailwindCSS** e **Lucide Icons**.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tecnologias Utilizadas
 
-Currently, two official plugins are available:
+- **Vite**: Ferramenta para construir e rodar projetos React de forma rápida e otimizada.
+- **React**: Biblioteca JavaScript para criar interfaces de usuário.
+- **TailwindCSS**: Framework CSS utilitário para facilitar o desenvolvimento de layouts responsivos e customizados.
+- **Lucide Icons**: Conjunto de ícones para usar em componentes interativos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demonstração
 
-## Expanding the ESLint configuration
+Aqui estão as duas imagens comparando o layout original ds Shopee e a versão recriada:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Layout Original Desktop
 
-- Configure the top-level `parserOptions` property like this:
+![image](https://github.com/user-attachments/assets/2ed1e7bf-7a51-4c5b-8494-02259d56b8e7)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Layout Recriado Desktop
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+![shopee final desktop](https://github.com/user-attachments/assets/cee8d2f3-18e8-4902-8434-152e520b27d8)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Layout Original Mobile
+
+![layout celular](https://github.com/user-attachments/assets/72ca23a8-d498-43c5-a76f-01677e48aa7c)
+
+### Layout Recriado Mobile
+
+![Captura de tela 2025-02-26 1617062](https://github.com/user-attachments/assets/4892cf60-a126-4b1e-9d68-41438bd68c65)
+
+## Como Rodar o Projeto
+
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/arthuracmm/shopee-layout
+    ```
+
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd shopee-layout
+    ```
+
+3. Instale as dependências:
+    ```bash
+    npm install
+    ```
+
+4. Rode o servidor de desenvolvimento:
+    ```bash
+    npm run dev
+    ```
+
+5. Acesse o projeto no seu navegador em [http://localhost:5173](http://localhost:5173).
